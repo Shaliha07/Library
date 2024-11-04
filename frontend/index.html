@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="auth">
+        <h2>Login</h2>
+        <input type="text" id="loginEmail" placeholder="Email">
+        <input type="password" id="loginPassword" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <p>Don't have an account? <span onclick="showRegister()">Register here</span></p>
+    </div>
+
+    <div id="register" style="display: none;">
+        <h2>Register</h2>
+        <input type="text" id="registerName" placeholder="Name">
+        <input type="text" id="registerEmail" placeholder="Email">
+        <input type="password" id="registerPassword" placeholder="Password">
+        <button onclick="register()">Register</button>
+        <p>Already have an account? <span onclick="showLogin()">Login here</span></p>
+    </div>
+
+    <div id="books" style="display: none;">
+        <h2>Library Books</h2>
+        <button onclick="fetchBooks()">Load Books</button>
+        <ul id="bookList"></ul>
+    </div>
+   
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
